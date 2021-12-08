@@ -12,7 +12,7 @@ import typeDefs from './db/schema';
 import conectarDB from './config/db';
 import jwt from 'jsonwebtoken';
 
-const PORT = 4000;
+const PORT = proccess.env.PORT || 4000;
 
 !async function() {
     const app = express();
